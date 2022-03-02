@@ -235,5 +235,82 @@ textarea::placeholder {
   }
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
+  /* Heading */
+  h1 {
+    font-size: 6vw;
+    margin: 2vw 0 0 0;
+  }
+
+  h3 {
+    font-size: 2vw;
+    margin: 0 2.7rem;
+  }
+
+  ul {
+    margin: 1vw 0 1.8vw 0;
+  }
+
+  a {
+    font-size: 4vw;
+    margin: 0 2vw;
+  }
+
+  .figure_sara {
+    display: block;
+    float: left;
+    width: 40%;
+    margin-left: 2vw;
+  }
+
+  .about_p {
+    position: relative;
+    top: -66vw;
+    margin: 0 4vw;
+    text-align: justify;
+    letter-spacing: 0.3vw;
+    font-size: 1.8vw;
+    width: 45%;
+    float: right;
+  }
+
+  figcaption {
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
+  }
+
+  /* About Me */
+
+  h2 {
+    font-size: 4vw;
+    margin: 3vw auto;
+    padding: 2vw 1.5vw;
+    border: 0.7vw dashed #fc66d1;
+    border-radius: 15%;
+  }
+
+  .figure_container {
+    position: relative;
+    top: -35vw;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: baseline;
+    margin: 0 vw;
+  }
+
+  .about_figure > figcaption {
+    padding: 0;
+  }
+
+  /*Projects*/
+  #projects_hr {
+    position: relative;
+    top: -35vw;
+  }
+
+  .projects_container {
+    position: relative;
+    top: -35vw;
+  }
 }
