@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Sara Cook</title>
   </head>
   <body>
     <header>
-      <h1>Sara Cook</h1>
-      <h2>
+      <h1>
+        Sara Cook
+      </h1>
+      <h3>
         I'm a junior software developer, previously a professional cellist.
-      </h2>
+      </h3>
+      <nav>
+        <ul>
+          <li>
+            <a href="#contact_heading" target="_blank">Contact</a>
+            <a href="#projects_heading" target="_blank">Projects</a>
+          </li>
+        </ul>
+      </nav>
       <figure>
         <img
+          class="img_sara"
           src="./images/saraphoto.JPG"
           alt="sara standing in front of mountains"
         />
         <br />
         <figcaption>Sara hiking up Ben Wyvis.</figcaption>
       </figure>
-      <nav>
-        <ul>
-          <li>
-            <a href="./pages/contact.html" target="_blank">Contact</a>
-            <a href="./pages/projects.html" target="_blank">Projects</a>
-          </li>
-        </ul>
-      </nav>
     </header>
+
     <main>
       <br />
       <hr />
-      <article>
-        <h3>About Me</h3>
+
+      <div class="about_container">
+        <h2 class="about_heading">About Me</h2>
         <p>
           I enjoy baking, reading, and hiking. I would like to hike the West
           Highland Way within the next few years. Recent baking adventures
@@ -42,7 +48,7 @@
           coders. When I got injured, I spent three months learning HTML and
           CSS. I've been hooked ever since.
         </p>
-        <figure>
+        <figure class="about_figure">
           <img
             src="./images/IMG_1652 (1).jpg"
             alt="sara smiling amongst many young cellists"
@@ -52,7 +58,7 @@
             I began my career as a cellist at a young age.
           </figcaption>
         </figure>
-        <figure>
+        <figure class="about_figure">
           <img
             src="./images/IMG_8251_mobile2.jpg"
             alt="sara playing cello with eyes closed"
@@ -60,7 +66,7 @@
           <br />
           <figcaption>I went to music school and honed my craft.</figcaption>
         </figure>
-        <figure>
+        <figure class="about_figure">
           <img
             src="images/photo-1542831371-29b0f74f9713.avif"
             alt="html coding text"
@@ -70,7 +76,7 @@
             I developed a passion for coding after an injury.
           </figcaption>
         </figure>
-        <figure>
+        <figure class="about_figure">
           <img
             src="./images/istockphoto-1125274914-170667a.jpg"
             alt="Hands typing on keyboard overlaid with coding text"
@@ -78,24 +84,97 @@
           <br />
           <figcaption>I am now an aspiring developer!</figcaption>
         </figure>
-      </article>
-      <article>
-        <h3><strong>Qualities</strong></h3>
-        <ol>
-          <li>Curious</li>
-          <li>Kind</li>
-          <li>Motivated</li>
-        </ol>
-      </article>
-      <article>
-        <h3><strong>Hobbies & Interests</strong></h3>
-        <ul>
-          <li>Baking</li>
-          <li>Hiking</li>
-          <li>Reading</li>
-        </ul>
-      </article>
+      </div>
+
+      <br />
+      <hr />
+
+      <div class="projects_container">
+        <h2 id="projects_heading">Projects</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Portfolio</th>
+              <th>Cello Website</th>
+              <th>Highlands Page</th>
+            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="../images/istockphoto-1289901483-170667a.jpg" alt="horizontal portfolio of images" />
+                </td>
+                <td>
+                  <img src="../images/Screenshot from 2022-02-24 15-58-23.png" alt="screenshot of sara's highland website" />
+                <td>
+                  <img src="../images/Screenshot from 2022-02-24 15-51-42.png" alt="screenshot of sara's cello website" /></td>
+  
+                </td>
+              </tr>
+              <tr>
+                <td>Portfolio page with links to a contact and projects page</td>
+                <td>Practice using CSS flexbox</td>
+                <td>My first coding project built with CSS and HTML</td>
+              </tr>
+            </tbody>
+          </thead>
+        </table>
+      </div>
+
+      <br />
+      <hr />
+
+
+      <div class="contact_container">
+        <h2 id="contact_heading">Contact</h2>
+        <form>
+          <fieldset>
+            <legend>Personal Details:</legend>
+            <label>
+            Name:
+            <input type="text" name="name" />
+            </label>
+            <label>
+            Email:
+            <input type="email" name="email" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Reason for Contact</legend>
+
+            <input
+            type="radio"
+            name="reason"
+            value="web-development"
+            checked="checked"
+            id="web-development"
+            />
+            <label for="web-development"> Web Development </label>
+
+            <input
+            type="radio"
+            name="reason"
+            value="alexander-technique"
+            id="alexander-technique"
+            />
+            <label for="alexander-technique"> Alexander Technique </label>
+
+            <input type="radio" name="reason" value="personal" id="personal" />
+            <label for="personal">Personal</label>
+          </fieldset>
+          <fieldset>
+            <legend>Your Query</legend>
+            <label>
+            Type here:
+            <textarea
+            name="comments"
+            placeholder="Type your text here..."
+            ></textarea>
+            </label>
+          </fieldset>
+        </form>
+      </div>
+
     </main>
-    <footer>2022, created by Sara Cook</footer>
+    <footer id="footer">2022, created by Sara Cook</footer>
   </body>
 </html>

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: rgb(0, 0, 0);
+  letter-spacing: 0.5vw;
+  line-height: 1.6;
+}
+
+/* Heading */
+
+h1 {
+  color: #66fc91;
+  text-align: center;
+  margin: 6vw 0 3vw 0;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+h3 {
+  text-align: center;
+  color: #fc66d1;
+  margin: 2vw;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 4vw 0;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #66fc91;
+  margin: 2vw;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.img_sara {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  color: #fc66d1;
+  font-weight: 200;
+  letter-spacing: 0.9vw;
+}
+
+/* About Me */
+
+h2 {
+  text-align: center;
+  color: #66fc91;
+  margin: 4vw 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #fc66d1;
+  margin: 4vw 2vw;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1.1vw;
+  padding: 2vw 3vw;
+}
+
+.about_figure > img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about_figure > figcaption {
+  padding: 0 9vw 15vw 9vw;
+}
+
+/* Projects */
+
+/* Contact */
+
+legend {
+  color: #66fc91;
+  font-size: 3rem;
+}
+
+label {
+  color: #fc66d1;
+  font-size: 2.5rem;
+}
+
+input {
+  height: 7vw;
+}
+
+/* Footer */
+#footer {
+  color: #66fc91;
+  text-align: center;
+  padding: 5vw 0;
+}
