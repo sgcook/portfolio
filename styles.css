@@ -189,6 +189,19 @@ textarea::placeholder {
   font-size: 4vw;
 }
 
+button {
+  color: #66fc91;
+  background-color: black;
+  border: 1px solid #fc66d1;
+  margin-top: 3vw;
+  padding: 2vw 3vw;
+  border-radius: 15%;
+}
+
+button:hover {
+  background-color: #fc66d1;
+}
+
 /* Footer */
 #footer {
   color: #66fc91;
@@ -301,7 +314,6 @@ textarea::placeholder {
   .figure_container {
     position: absolute;
     display: grid;
-    width: 100vw;
     grid-template-columns: repeat(4, 1fr);
     align-items: baseline;
     margin: 1vw 2vw;
@@ -318,8 +330,20 @@ textarea::placeholder {
   }
 
   .projects_img {
-    height: 75vh;
-    width: auto;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  #img_portfolio {
+    object-fit: contain;
+  }
+
+  #img_highlands {
+    object-fit: scale-down;
+  }
+
+  #img_cello {
+    width: 60%;
   }
 
   .projects_p {
