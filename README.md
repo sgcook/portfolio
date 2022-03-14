@@ -1,8 +1,6 @@
-# Portfolio
+# Portfolio - Practice using HTML and CSS
 
-Practice using HTML and CSS
-
-CSS tools used:
+## CSS tools used:
 
 - grid
 - media queries
