@@ -113,10 +113,6 @@ p {
 
 .projects_a {
   color: #66fc91;
-  text-align: center;
-  margin: 6vw 0 3vw 0;
-  font-size: 3.5vw;
-  font-weight: 600;
 }
 
 .projects_a:hover {
