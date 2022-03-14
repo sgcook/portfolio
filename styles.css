@@ -8,15 +8,16 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   text-align: center;
   color: #fc66d1;
 }
 
 hr {
   width: 92%;
-  margin-left: auto;
+  margin-top: 5vw;
   margin-right: auto;
+  margin-left: auto;
   height: 1px;
   background-color: #66fc91;
   border: none;
@@ -61,6 +62,7 @@ a {
 figcaption {
   font-weight: 200;
   letter-spacing: 0.3vw;
+  margin-top: 2vw;
   font-size: 2.5vw;
 }
 
@@ -70,7 +72,7 @@ h2 {
   display: inline-block;
   position: relative;
   color: #66fc91;
-  margin-top: 8vw;
+  margin-top: 7vw;
   margin-bottom: 3vw;
   font-size: 8vw;
   padding: 3vw;
@@ -91,10 +93,6 @@ p {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.about_figure_img {
-  padding-bottom: 10vw;
 }
 
 /* Projects */
@@ -120,7 +118,7 @@ p {
   font-weight: 200;
   letter-spacing: 0.3rem;
   margin-top: 1vw;
-  margin-bottom: 8vw;
+  margin-bottom: 4vw;
   font-size: 2.5vw;
 }
 
@@ -227,10 +225,6 @@ button:hover {
     width: 90%;
   }
 
-  textarea::placeholder {
-    font-size: 4vw;
-  }
-
   button {
     font-size: 3.8vw;
   }
@@ -314,10 +308,7 @@ button:hover {
     width: 70%;
   }
 
-  #img_portfolio {
-    object-fit: contain;
-  }
-
+  #img_portfolio,
   #img_highlands {
     object-fit: contain;
   }

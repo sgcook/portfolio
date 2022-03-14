@@ -27,13 +27,11 @@
           src="./images/saraphoto.png"
           alt="sara standing in front of mountains"
         />
-        <br />
         <figcaption>Sara hiking up Ben Wyvis.</figcaption>
       </figure>
     </header>
 
     <main>
-      <br />
       <hr />
 
       <div class="about_container">
@@ -58,7 +56,6 @@
             src="./images/youngSara.png"
             alt="sara smiling amongst many young cellists"
           />
-          <br />
           <figcaption class="about_figure_img">
             I began my career as a cellist at a young age.
           </figcaption>
@@ -69,7 +66,6 @@
             src="./images/mobile_sara.png"
             alt="sara playing cello with eyes closed"
           />
-          <br />
           <figcaption class="about_figure_img">I went to music school and honed my craft.</figcaption>
         </figure>
         <figure class="about_figure">
@@ -78,7 +74,6 @@
             src="images/coding_screenshot.png"
             alt="html coding text"
           />
-          <br />
           <figcaption class="about_figure_img">
             I developed a passion for coding after an injury.
           </figcaption>
@@ -89,12 +84,10 @@
             src="./images/coding_frenzy.png"
             alt="Hands typing on keyboard overlaid with coding text"
           />
-          <br />
           <figcaption class="about_figure_img">I am now an aspiring developer!</figcaption>
         </figure>
       </div>
 
-      <br />
       <hr id="projects_hr"/>
 
       <div class="projects_container">
@@ -118,7 +111,6 @@
         </section>
       </div>
 
-      <br />
       <hr id="contact_hr"/>
 
 
@@ -127,48 +119,45 @@
         <form class="form"> 
           <fieldset class="contact_details">
             <legend>Personal Details</legend>
-            <label id="name">
-            Name:
             <input type="text" name="name" />
-            </label>
-            <label>
-            Email:
+            <label id="name">Name:</label>
+
             <input type="email" name="email" />
-            </label>
+            <label>Email:</label>
           </fieldset>
+
           <fieldset class="contact_reason">
             <legend>Reason for Contact</legend>
-
             <input
-            type="radio"
-            name="reason"
-            value="web-development"
-            checked="checked"
-            id="web-development"
+              type="radio"
+              name="reason"
+              value="web-development"
+              checked="checked"
+              id="web-development"
             />
             <label class="contact_label" for="web-development"> Web Development </label>
 
             <input
-            type="radio"
-            name="reason"
-            value="alexander-technique"
-            id="alexander-technique"
+              type="radio"
+              name="reason"
+              value="alexander-technique"
+              id="alexander-technique"
             />
             <label class="contact_label" for="alexander-technique"> Alexander Technique </label>
 
             <input type="radio" name="reason" value="personal" id="personal" />
             <label class="contact_label" for="personal">Personal</label>
           </fieldset>
+
           <fieldset class="contact_query">
             <legend>Your Query</legend>
-            <label>
-            Type here:
             <textarea
-            name="comments"
-            placeholder="Type your text here..."
-            ></textarea>
-            </label>
+              name="comments"
+              placeholder="Type your text here...">
+            </textarea>
+            <label>Type here:</label>
           </fieldset>
+          
           <button type="button">Submit</button>
         </form>
       </div>
