@@ -26,13 +26,11 @@ h1 {
   color: #66fc91;
   margin: 6vw 0 1vw 0;
   font-size: 13vw;
-  font-weight: 900;
 }
 
 h3 {
   color: #fc66d1;
   margin: 2vw;
-  font-weight: 600;
   letter-spacing: 0.7vw;
   font-size: 3.6vw;
 }
@@ -40,14 +38,12 @@ h3 {
 ul {
   list-style-type: none;
   margin: 4vw 0;
-  font-weight: 600;
 }
 
 a {
   text-decoration: none;
   color: #66fc91;
   margin: 2vw;
-  font-weight: 900;
   font-size: 4.5vw;
 }
 
@@ -71,7 +67,6 @@ h2 {
   position: relative;
   color: #66fc91;
   margin: 8vw 0 3vw 0;
-  font-weight: 600;
   font-size: 8vw;
   padding: 3vw;
   border: 1vw dashed #fc66d1;
