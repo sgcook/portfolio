@@ -111,10 +111,6 @@ p {
   text-align: center;
 }
 
-.projects_a {
-  color: #66fc91;
-}
-
 .projects_a:hover {
   background-color: #fc66d1;
   padding: 1vw 2vw 1vw 2vw;
