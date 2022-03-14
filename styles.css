@@ -52,11 +52,14 @@ a {
   font-size: 4.5vw;
 }
 
+.figure_sara {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .img_sara {
-  display: block;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 figcaption {
@@ -83,6 +86,12 @@ p {
   font-weight: 500;
 }
 
+.about_figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about_p {
   margin-left: 4vw;
   margin-right: 4vw;
@@ -94,10 +103,7 @@ p {
 }
 
 .about_img {
-  display: block;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .about_figure_img {
@@ -106,18 +112,31 @@ p {
 
 /* Projects */
 
+.projects_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects_heading {
+  margin-bottom: 5vw;
+}
+
 .projects_a:hover {
   background-color: #fc66d1;
   padding: 1vw 2vw;
   border-radius: 15%;
 }
 
+.projects_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .projects_img {
-  display: block;
   width: 90%;
   margin-top: 1vw;
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid #fc66d1;
   border-radius: 8%;
   padding: 1vw;
@@ -125,23 +144,30 @@ p {
 
 .projects_p {
   font-weight: 200;
-  margin-top: 1vw;
+  margin-top: 2vw;
   margin-bottom: 4vw;
   font-size: 2.5vw;
 }
 
 /* Contact */
 
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 fieldset {
   margin: 2vw;
   padding: 2vw;
   border: 1px solid #fc66d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 legend {
@@ -150,25 +176,22 @@ legend {
 }
 
 label {
-  display: block;
   font-size: 5vw;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 input {
-  display: block;
   height: 7vw;
   width: 80%;
-  margin: 3vw auto;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   font-size: 4vw;
 }
 
 textarea {
-  display: block;
   width: 90%;
   height: 16vw;
-  margin: 3vw auto;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   font-size: 4vw;
 }
 
@@ -183,6 +206,7 @@ button {
   margin-top: 3vw;
   padding: 2vw 3vw;
   border-radius: 15%;
+  font-size: 4vw;
 }
 
 button:hover {
@@ -208,29 +232,12 @@ button:hover {
   }
 
   label {
-    display: inline;
     font-size: 4vw;
-    text-align: left;
-  }
-
-  input {
-    display: inline;
-  }
-
-  .contact_reason {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
   }
 
   input[type='radio'] {
     height: 7vw;
     width: 3vw;
-  }
-
-  textarea {
-    display: inline;
-    width: 90%;
   }
 
   button {
@@ -355,7 +362,6 @@ button:hover {
 
   input {
     height: 7vw;
-    width: 100%;
     font-size: 1.8vw;
   }
 
@@ -390,7 +396,6 @@ button:hover {
   }
 
   textarea {
-    width: 100%;
     margin: 1vw auto;
     font-size: 1.8vw;
   }
