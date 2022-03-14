@@ -282,8 +282,7 @@ button:hover {
       'hr      hr'
       'heading heading';
     grid-template-columns: 1fr 1fr;
-    /*FIX!!!!!!!!!!!!!!!1*/
-    grid-template-rows: 500px 700px 100px 1fr;
+    grid-template-rows: 25vw 35vw 6vw auto;
   }
 
   .figure {
@@ -345,16 +344,6 @@ button:hover {
   .projects_img {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-  }
-
-  #img_portfolio,
-  #img_highlands {
-    object-fit: contain;
-  }
-
-  #img_cello {
-    width: 60%;
   }
 
   .projects_p {
