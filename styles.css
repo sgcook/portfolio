@@ -1,14 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  letter-spacing: 0.3rem;
+  line-height: 1.6;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   background-color: rgb(0, 0, 0);
-  letter-spacing: 0.3rem;
-  line-height: 1.6;
+  text-align: center;
 }
 
 hr {
@@ -23,14 +24,12 @@ hr {
 
 h1 {
   color: #66fc91;
-  text-align: center;
   margin: 6vw 0 1vw 0;
   font-size: 13vw;
   font-weight: 900;
 }
 
 h3 {
-  text-align: center;
   color: #fc66d1;
   margin: 2vw;
   font-weight: 600;
@@ -40,7 +39,6 @@ h3 {
 
 ul {
   list-style-type: none;
-  text-align: center;
   margin: 4vw 0;
   font-weight: 600;
 }
@@ -60,7 +58,6 @@ a {
 }
 
 figcaption {
-  text-align: center;
   color: #fc66d1;
   font-weight: 200;
   letter-spacing: 0.3vw;
@@ -69,14 +66,9 @@ figcaption {
 
 /* About Me */
 
-.about_container {
-  text-align: center;
-}
-
 h2 {
   display: inline-block;
   position: relative;
-  text-align: center;
   color: #66fc91;
   margin: 8vw 0 3vw 0;
   font-weight: 600;
@@ -89,27 +81,23 @@ h2 {
 p {
   color: #fc66d1;
   margin: 4vw 2vw;
-  text-align: center;
   font-weight: 500;
   letter-spacing: 1vw;
   padding: 2vw 3vw;
   font-size: 3.3vw;
 }
 
-.about_figure > img {
+.about_img {
   display: block;
   width: 80%;
   margin: 0 auto;
 }
 
-.about_figure > figcaption {
+.about_figure_img {
   padding: 0 9vw 10vw 9vw;
 }
 
 /* Projects */
-.projects_container {
-  text-align: center;
-}
 
 .projects_a:hover {
   background-color: #fc66d1;
@@ -136,10 +124,6 @@ p {
 
 /* Contact */
 
-.contact_container {
-  text-align: center;
-}
-
 .form {
   width: 80%;
   margin: 0 auto;
@@ -160,7 +144,6 @@ label {
   display: block;
   color: #fc66d1;
   font-size: 5vw;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -200,7 +183,6 @@ button:hover {
 /* Footer */
 #footer {
   color: #66fc91;
-  text-align: center;
   padding: 5vw 0;
   font-size: 3vw;
 }
@@ -324,9 +306,6 @@ button:hover {
   }
 
   /*Projects*/
-  .projects_a {
-    margin: 0;
-  }
 
   .projects_img {
     margin: 0 auto;
