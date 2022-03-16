@@ -251,26 +251,32 @@ button:hover {
 /*Media Query min-width 1200px*/
 @media screen and (min-width: 1200px) {
   /* Heading */
+
   h1 {
-    font-size: 6vw;
-    margin-top: 2vw;
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h3 {
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
 
   ul {
-    margin-top: 1vw;
-    margin-bottom: 1.8vw;
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
   }
 
   a {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   hr {
     margin-top: 3vw;
+  }
+
+  .img_sara {
+    width: 60%;
   }
 
   /*Wanted paragraph next to photo, but column in mobile*/
@@ -281,17 +287,20 @@ button:hover {
       'figure  second'
       'hr      hr'
       'heading heading';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25vw 35vw 6vw auto;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 14vw 20vw 4vw auto;
   }
 
-  .figure {
+  .figure_sara {
     grid-area: figure;
   }
 
   .about_p {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     padding-top: 2vw;
+    padding-left: 0;
+    margin-left: 1vw;
+    margin-right: 5vw;
     text-align: justify;
   }
 
