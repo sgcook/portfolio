@@ -1,5 +1,7 @@
 # Portfolio - Practice using HTML and CSS
 
+- first time using mobile-first approach
+
 ## CSS tools used:
 
 - grid
