@@ -7,10 +7,15 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
   background-color: #000000;
   text-align: center;
   color: #fc66d1;
+  --fs-xl: clamp(3.5rem, 6vw + 1rem, 5rem);
+  --fs-l: clamp(2rem, 5vw + 1rem, 3rem);
+  --fs-m: clamp(1.5rem, 4vw + 1rem, 3rem);
+  --fs-s: clamp(1.2rem, 4vw + 1rem, 2.7rem);
+  --fs-p: clamp(0.8rem, 3vw + 0.5rem, 1.8rem);
+  --fs-xs: clamp(0.6rem, 3vw, 1.5rem);
 }
 
 hr {
@@ -27,15 +32,15 @@ hr {
 
 h1 {
   color: #66fc91;
-  margin-top: 6vw;
-  margin-bottom: 1vw;
-  font-size: 13vw;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: var(--fs-xl);
 }
 
 h3 {
   margin-right: 3vw;
   margin-left: 3vw;
-  font-size: 3.6vw;
+  font-size: var(--fs-m);
 }
 
 ul {
@@ -49,7 +54,7 @@ a {
   color: #66fc91;
   margin-right: 2vw;
   margin-left: 2vw;
-  font-size: 4.5vw;
+  font-size: var(--fs-s);
 }
 
 /* About Me */
@@ -67,15 +72,15 @@ a {
 figcaption {
   font-weight: 200;
   margin-top: 2vw;
-  font-size: 2.5vw;
+  font-size: var(--fs-xs);
 }
 
 h2 {
   display: inline-block;
+  font-size: var(--fs-l);
   color: #66fc91;
   margin-top: 7vw;
   margin-bottom: 3vw;
-  font-size: 8vw;
   padding: 3vw;
   border: 1vw dashed #fc66d1;
   border-radius: 15%;
@@ -83,6 +88,7 @@ h2 {
 
 p {
   font-weight: 500;
+  font-size: var(--fs-p);
 }
 
 .about_figure {
@@ -98,7 +104,6 @@ p {
   padding-top: 5vw;
   padding-left: 2vw;
   padding-right: 2vw;
-  font-size: 3.3vw;
 }
 
 .about_img {
@@ -107,6 +112,7 @@ p {
 
 .about_figure_img {
   margin-bottom: 6vw;
+  font-size: var(--fs-p);
 }
 
 /* Projects */
@@ -145,7 +151,6 @@ p {
   font-weight: 200;
   margin-top: 2vw;
   margin-bottom: 4vw;
-  font-size: 2.5vw;
 }
 
 /* Contact */
@@ -171,11 +176,12 @@ fieldset {
 
 legend {
   color: #66fc91;
-  font-size: 6vw;
+  font-size: var(--fs-s);
 }
 
-label {
-  font-size: 5vw;
+label,
+textarea::placeholder {
+  font-size: var(--fs-s);
 }
 
 input {
@@ -183,7 +189,7 @@ input {
   width: 80%;
   margin-top: 3vw;
   margin-bottom: 3vw;
-  font-size: 4vw;
+  font-size: var(--fs-s);
 }
 
 textarea {
@@ -191,11 +197,7 @@ textarea {
   height: 16vw;
   margin-top: 3vw;
   margin-bottom: 3vw;
-  font-size: 4vw;
-}
-
-textarea::placeholder {
-  font-size: 4vw;
+  font-size: var(--fs-s);
 }
 
 button {
@@ -205,7 +207,7 @@ button {
   margin-top: 3vw;
   padding: 2vw 3vw;
   border-radius: 15%;
-  font-size: 4vw;
+  font-size: var(--fs-m);
 }
 
 button:hover {
@@ -215,9 +217,9 @@ button:hover {
 /* Footer */
 #footer {
   color: #66fc91;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-  font-size: 3vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  font-size: var(--fs-xs);
 }
 
 /*Media Query min-width 768px*/
@@ -226,25 +228,9 @@ button:hover {
     width: 90%;
   }
 
-  legend {
-    font-size: 5vw;
-  }
-
-  label {
-    font-size: 4vw;
-  }
-
   input[type='radio'] {
     height: 7vw;
     width: 3vw;
-  }
-
-  button {
-    font-size: 3.8vw;
-  }
-
-  #footer {
-    font-size: 2.5vw;
   }
 }
 
@@ -253,22 +239,13 @@ button:hover {
   /* Heading */
 
   h1 {
-    font-size: 4vw;
     margin-top: 0;
     margin-bottom: 0;
-  }
-
-  h3 {
-    font-size: 1.8vw;
   }
 
   ul {
     margin-top: 0.5vw;
     margin-bottom: 1vw;
-  }
-
-  a {
-    font-size: 3vw;
   }
 
   hr {
@@ -288,15 +265,15 @@ button:hover {
       'hr      hr'
       'heading heading';
     grid-template-columns: 3fr 5fr;
-    grid-template-rows: 14vw 20vw 4vw auto;
+    grid-template-rows: minmax(14vw, auto) minmax(20vw, auto) 4vw auto;
   }
 
   .figure_sara {
     grid-area: figure;
+    align-self: center;
   }
 
   .about_p {
-    font-size: 1.5vw;
     padding-top: 2vw;
     padding-left: 0;
     margin-left: 1vw;
@@ -319,18 +296,15 @@ button:hover {
 
   .about_heading {
     grid-area: heading;
-    width: 21%;
   }
 
   figcaption {
-    font-size: 1.5vw;
     margin-bottom: 3vw;
   }
 
   /* About Me */
 
   h2 {
-    font-size: 4vw;
     margin: 3vw auto;
     padding: 2vw 1.5vw;
     border: 0.7vw dashed #fc66d1;
@@ -358,7 +332,6 @@ button:hover {
   .projects_p {
     padding: 0;
     margin-bottom: 3vw;
-    font-size: 1.8vw;
   }
 
   /*Contact*/
@@ -374,17 +347,8 @@ button:hover {
     padding: 0;
   }
 
-  legend {
-    font-size: 3vw;
-  }
-
-  label {
-    font-size: 1.8vw;
-  }
-
   input {
     height: 7vw;
-    font-size: 1.8vw;
     margin-top: 0;
   }
 
@@ -414,24 +378,13 @@ button:hover {
   textarea {
     margin: 1vw auto;
     margin-bottom: 2vw;
-    font-size: 1.8vw;
-  }
-
-  textarea::placeholder {
-    font-size: 1.8vw;
   }
 
   button {
     grid-column: 1/3;
-    font-size: 3vw;
-    width: 30%;
+    max-width: 25%;
     margin-top: 2vw;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  /*Footer*/
-  #footer {
-    font-size: 1.6vw;
   }
 }
